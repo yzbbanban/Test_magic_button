@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wangban.yzbbanban.test_magic_button.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintRight_toRightOf="@+id/activity_main"
+        app:layout_constraintTop_toTopOf="@+id/activity_main" />
+
+    <br.com.bloder.magic.view.MagicButton
+        android:id="@+id/magic_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:button_icon="@mipmap/my_logo"
+        app:button_icon_height="25dp"
+        app:button_icon_width="25dp"
+        app:expandable_area_color="@color/colorAccent"
+        app:hide_text="hello world"
+        app:icon_button_color="@color/colorPrimary"
+        app:magic_button_size="50dp"></br.com.bloder.magic.view.MagicButton>
+
+</android.support.constraint.ConstraintLayout>
